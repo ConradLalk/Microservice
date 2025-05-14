@@ -1,8 +1,7 @@
 # Microservice A
 
 # How to request
-  To request my microservice to sort/filter provided data, a list containing '0', '1', '2', '3', or '4' must be added to the 0 index of the provided data.
-  This lets the microservice know what actions to complete and what to return.
+  To request my microservice to sort/filter provided data, a list containing '0', '1', '2', '3', or '4' must be added to the 0 index of the provided data. This lets the microservice know what actions to complete and what to return.
 
   # Example call
     leaderboard.insert(0, [user_input])
