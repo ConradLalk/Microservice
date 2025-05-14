@@ -21,5 +21,6 @@
               data = json.load(f)
               if data[0][0] == 'Name':
                   break
-
+                  
+# UML sequence diagram
 ![image](https://github.com/user-attachments/assets/2262f318-3f8d-41e8-b0e1-5a94edbf82cf)
