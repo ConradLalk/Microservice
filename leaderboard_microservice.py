@@ -25,6 +25,7 @@ while True:
         if os.path.getsize('leaderboard.json') == 0:
             continue
         data = json.load(f)
+        time.sleep(10)
 
         # sort by name
         if data[0][0] == '0':
@@ -34,7 +35,6 @@ while True:
             sorted_leaderboard = [header] + rows_sorted
             with open('leaderboard.json', 'w', encoding='utf-8') as file:
                 json.dump(sorted_leaderboard, file, ensure_ascii=False, indent=2)
-                print('added')
 
         # sort by speed
         if data[0][0] == '1':
@@ -44,7 +44,6 @@ while True:
             sorted_leaderboard = [header] + rows_sorted
             with open('leaderboard.json', 'w', encoding='utf-8') as file:
                 json.dump(sorted_leaderboard, file, ensure_ascii=False, indent=2)
-                print('added')
 
         # sort by difficulty: Easy
         if data[0][0] == '2':

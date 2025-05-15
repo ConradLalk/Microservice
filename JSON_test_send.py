@@ -30,7 +30,7 @@ while True:
 
         while True:
             if os.path.getsize('leaderboard.json') > 0:
-                time.sleep(1)
+                time.sleep(1)  # added to prevent program crashes
                 with open('leaderboard.json', 'r') as f:
                     data = json.load(f)
                     if data[0][0] == 'Name':
